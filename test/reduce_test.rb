@@ -17,7 +17,6 @@ describe Reducer do
   end
 
   it "can reverse a sentence with reduce" do
-    skip
     sentence = "I am a unicorn"
     reducer = Reducer.new(sentence)
     assert_equal "nrocinu a ma I", reducer.sent_reverse
