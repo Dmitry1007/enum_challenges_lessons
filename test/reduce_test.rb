@@ -23,7 +23,6 @@ describe Reducer do
   end
 
   it "can reverse the word order in a sentence" do
-    skip
     sentence = "I am a unicorn"
     reducer = Reducer.new(sentence)
     assert_equal "unicorn a am I", reducer.word_reverse
