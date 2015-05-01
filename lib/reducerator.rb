@@ -17,4 +17,10 @@ class Reducer
       memo.insert(0,letter)
     end
   end
+
+  def word_reverse
+    object.split(" ").reduce("") do |memo, word|
+      memo.insert(0,"#{word} ")
+    end.chop
+  end
 end
